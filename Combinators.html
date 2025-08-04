@@ -1,0 +1,75 @@
+<!-- Add a Css stylings using combinator selectors , for paragraph and span tags  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> Combinators </title>
+</head>
+<body>
+<style>
+    .weird > p {
+      color: blue;
+      font-weight: bold;
+      background-color: lightblue;
+    }
+    .weird > span {
+      color: green;
+      font-style: italic;
+      background-color: lightgreen;
+    }
+    article~ p {
+      color: red;
+      font-size: 20px;
+      background-color: lightcoral;
+    }
+    p+ span {
+      color: purple;
+      text-decoration: underline;
+      background-color: lavender;
+    }
+    div > p {
+      color: orange;
+      font-size: 18px;
+      background-color: lightyellow;
+    }
+    article > p {
+      color: brown;
+      font-family: 'Courier New', Courier, monospace;
+      background-color: lightgray;
+    }
+    .outer > p {
+      color: navy;
+      font-size: 16px;
+      background-color: lightcyan;
+    }
+  </style>
+  <section class="outer">
+    <div class="middle">
+      <article class="weird">
+        <p>Paragraph 1</p>
+        <span>Span in article</span>
+      </article>
+      <p>Paragraph 2</p>
+      <span>Span in middle</span>
+      <div>
+        <p>Nested Paragraph 3</p>
+      </div>
+    </div>
+    <p>Paragraph 4</p>
+    <span>Span in outer</span>
+  </section>
+
+  <article>
+    <p>Paragraph 5</p>
+  </article>
+
+  <p>Paragraph 6</p>
+
+</body>
+</html>
+
+
+
+
+
