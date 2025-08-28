@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            display:grid;
+            width: 100%;
+            height: 100vh;
+            gap: 20px;
+            grid-template-areas:
+            'img1 img2 img3 img4 img4'
+            'img5 img6 img3 img7 img7'
+            'img8 img6 img9 img7 img7';
+            grid-auto-rows: 35%;
+        }
+        .parent>img{
+            width: 100%;
+            height: 100%;
+        }
+        .img1{
+            grid-area: img1;
+        }
+        .img2{
+            grid-area: img2;
+        }
+        .img3{
+            grid-area: img3;
+        }
+        .img4{
+            grid-area: img4;
+        }
+        .img5{
+            grid-area: img5;
+        }
+        .img6{
+            grid-area: img6;
+        }
+        .img7{
+            grid-area: img7;
+        }
+        .img8{
+            grid-area: img8;
+        }
+        .img9{
+            grid-area: img9;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <img src="https://i.pinimg.com/736x/fd/89/cc/fd89cce0b421b6b4d37959ffc4422efc.jpg" alt="" class="img1">
+        <img src="https://i.pinimg.com/474x/4f/35/b9/4f35b9d128939112fd9c5031a9cddede.jpg" alt="" class="img2">
+        <img src="https://i.pinimg.com/736x/66/b7/f6/66b7f6e5ad85cdfeab3459f2b5480407.jpg" alt="" class="img3">
+        <img src="https://i.pinimg.com/736x/2e/91/dd/2e91ddbd18a5c4c0df911f44cfaacff2.jpg" alt="" class="img4">
+        <img src="https://e0.pxfuel.com/wallpapers/163/906/desktop-wallpaper-beautiful-nature-with-girl-beautiful-girl-with-nature-and-moon-high-resolution-beautiful.jpg" alt="" class="img5">
+        <img src="https://w0.peakpx.com/wallpaper/265/481/HD-wallpaper-nature.jpg" alt="" class="img6">
+        <img src="https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?cs=srgb&dl=pexels-souvenirpixels-417074.jpg&fm=jpg" alt="" class="img7">
+        <img src="https://thumbs.dreamstime.com/b/landscape-sunset-view-morain-lake-mountain-range-alberta-canada-44613434.jpg" alt="" class="img8">
+        <img src="https://wallpapers.com/images/featured/hd-nature-pictures-ngdfb9h966h4z3le.jpg" alt="" class="img9">
+    </div>
+</body>
+</html>
