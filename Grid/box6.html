@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Box 6</title>
+    <style>
+        .parent{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            /* grid-template-rows: repeat(3,1fr); */
+            height: 100vh;
+            width: 100%;
+            border: 5px solid gray;
+        }
+        .child1{
+            grid-column: 1/3;
+            grid-row: 1/4;
+            border: 5px solid gray;
+
+        }
+        .child2{
+            grid-column: 3/4;
+            border: 5px solid gray;
+        }
+        .child3{
+            grid-row: 2/4;
+            border: 5px solid gray;
+        }
+        .child4{
+            border: 5px solid gray;
+        }
+        .child5{
+            border: 5px solid gray;
+        }
+        .child6{
+            border: 5px solid gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child1"></div>
+        <div class="child2"></div>
+        <div class="child3"></div>
+        <div class="child4"></div>
+        <div class="child5"></div>
+        <div class="child6"></div>
+
+    </div>
+</body>
+</html>

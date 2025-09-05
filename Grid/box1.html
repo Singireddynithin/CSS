@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Boxes</title>
+  <style>
+    .parent {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr; /* 3 equal columns */
+      box-sizing: border-box;
+      width: 100%;
+      height: 100vh;
+      border: 2px solid gray;
+      gap: 5px;
+    }
+    .parent div {
+      border: 1px solid gray; /* just to see boxes */
+      /* background: aqua; */
+    }
+    .child1{
+        background-color: aqua;
+    }
+    .child2{
+        background-color:bisque ;
+    }
+    .child3{
+        background-color: aquamarine;
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="child1"></div>
+    <div class="child2"></div>
+    <div class="child3"></div>
+  </div>
+  
+</body>
+</html>
